@@ -1,0 +1,126 @@
+/*
+# 04. Navigation - Float
+
+## Tasks
+ * Change the **title** to **Navigation - Float**
+ * Create a **header** with a **p** for as **title**
+ * Inside the paragraph add a **nav** with a **ul** and 4 **li** elements
+ * Create a **main**, which contains 1 **article** with a **header** and **h1** inside the **header**
+ * Add a **section** inside the **article**
+ * Create an **aside** element and add 2 **section** elements to it
+ * The sections should have a **h3** title and a navigation - **nav** with a **ul** and **li** elements
+ * Check the screenshot for more info
+
+## Constraints
+ * Use **rgb(0, 102, 0)** for the anchors
+ * Use **rgb(238, 238, 238)** for body background
+ * Use **rgb(255, 255, 255)** for image background and **rgba(0, 0, 0, 0.25)** for image box shadow
+ * Use font **"Georgia", sans-serif** for the **blockquote**
+ * Use font **"Georgia", sans-serif** with size **1em/1.2** for the headings
+*/
+
+body {
+	background-color: rgb(238, 238, 238);
+	margin: 5%;
+	font-family: "Helvetica", sans-serif;
+	line-height: 1.25;
+}
+
+h1, h2, h3, h4, h5, h6,  {
+	font-family: "Georgia", sans-serif;
+	font-size: 1em;
+	line-height. 1.2;
+}
+
+.blockquote {
+	font-family: "Georgia", sans-serif;
+}
+
+header {
+	border-bottom: 0.2rem solid black;
+	margin: 0 0 0.25rem;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 102, 0);
+}
+
+header .site-title {
+	display: inline-block;
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.25;
+}
+
+header nav {
+	list-style: none;
+	display: block;
+	float: right;
+	margin-top: 2rem;
+}
+
+header ul li {
+	display: block;
+	float: left;
+	padding: 1rem;
+}
+
+header:after {
+	display: block;
+	content: "";
+	clear: both
+}
+
+main {
+	float: left;
+	max-width: 70%;
+}
+
+aside {
+	float: left;
+	max-width: 30%;
+	padding-left: 2rem;
+}
+
+aside ul {
+	list-style: square;
+}
+
+img {
+	display: float;
+	background-color: rgb(255,255,255);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+	border: 0.25rem solid black;
+	padding: 1rem;
+}
+
+img.left {
+	margin-right: 1rem;
+	float: left;
+}
+
+img.right {
+	margin-left: 1rem;
+	float: right;
+}
+
+blockquote {
+	padding: 0 0 1rem 1rem;
+	float: right;
+	max-width: 40%;
+	font-family: "Georgia", sans-serif;
+	font-style: italic;
+	border-left: 0.25rem solid lightgray;
+}
+
+blockquote .author {
+	text-align: right;
+}
+
+main:after {
+	display: block;
+	content = "";
+	clear: both;
+}

@@ -1,0 +1,21 @@
+html {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+body {
+	margin: 10%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+ul {
+	list-style-type: square;
+}
+
+ol {
+	list-style-type: decimal;
+}

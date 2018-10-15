@@ -1,0 +1,60 @@
+html {
+	font: 16px/1.5 Helvetica, sans-serif;
+}
+
+body {
+	padding: 5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: 1em/1.2 Georgia, serif;
+	margin: 1rem 0 0.5rem 0;
+	padding: 0;
+}
+
+h1 {font-size: 2.2rem;}
+h2 {font-size: 2.0rem;}
+h3 {font-size: 1.8rem;}
+h4 {font-size: 1.6rem;}
+h5 {font-size: 1.4rem;}
+h6 {font-size: 1.2rem;}
+
+p {
+	margin: 0;
+	padding-bottom: 1rem;
+}
+
+ul, ol, dl {
+	margin: 0 0 1.5rem 0;
+	padding: 0;
+	margin-left: 1.5rem;
+}
+
+ul li, ol li {
+	list-style-position: inside;
+}
+
+ul ul {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+blockquote {
+	border-left: 4px solid #DDD;
+	font-style: italic;
+	margin: 0 0 1.5rem 2rem;
+	position: relative;
+}
+
+blockquote .author {
+	text-align: right;
+}
+
+table {
+	table-layout: fixed
+}
+
+hr {
+	margin-bottom: 2rem;
+}
+

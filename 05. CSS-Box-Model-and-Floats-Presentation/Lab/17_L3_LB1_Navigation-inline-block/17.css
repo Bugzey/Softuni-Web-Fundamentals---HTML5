@@ -1,0 +1,79 @@
+/*
+# 01. Navigation Inline Block
+
+## Tasks
+ * Create an **"index.html"** and **"style.css"** files
+ * Change the **title** to **Navigation Inline Block**
+ * Create a **header**  with **navigation bar** inside
+ * Add **display: inline-block;** style for each item in the **nav**
+	
+## Constraints
+ * Fonts
+	* Font family **"Helvetica", sans-serif** with font size **16px** and line height **1.2** for the **html**
+	* Font family **"Georgia", sans-serif** with font size **1em** and line height **1.2** for the **headings**
+*/
+
+html {
+	font-family: "Helvetica", sans-serif;
+	fint-size: 16px;
+	line-height: 1.2;
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 5%;
+}
+
+header {
+	border-bottom: solid 2px black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Georgia", sans-serif;
+	font-size: 1em;
+	line-height: 1.2;
+}
+
+.site-title {
+	float: left;
+	display: inline-block;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.nav {
+	float: left;
+	list-style: none;
+	margin: 0;
+}
+
+.nav li {
+	display: inline-block;
+	padding: 0.5rem;
+	color: green;
+	margin-top: 3.5rem;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: inherit;
+	padding: 2rem;
+	
+}
+
+.nav li a:hover,
+.nav li a:focus {
+	color: lightgreen;
+	background-color: brown;
+}
+	
+
+header:after {
+	display: block;
+	content: "";
+	clear: both;
+}

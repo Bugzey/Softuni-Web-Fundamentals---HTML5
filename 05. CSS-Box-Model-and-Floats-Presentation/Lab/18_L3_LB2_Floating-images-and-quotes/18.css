@@ -1,0 +1,73 @@
+/*
+# 02. Floating Images and Quotes
+
+---
+## Tasks
+ * Create an **"index.html"** and **"style.css"** files
+ * Change the **title** to **Floating Images and Quotes**
+ * Create a **header** with **h1** inside
+ * Add an **article**  and look the screenshot for some insight for the other items inside
+ 
+## Constraints
+ * Use color - **rgb(238, 238, 238)** for body background
+ * Use color - **rgb(255, 255, 255)** for image background and **rgba(0, 0, 0, 0.25)** for image box shadow
+ * Use font family **"Georgia", sans-serif** for the **blockquote** and **headings**
+*/
+
+body {
+	background-color: rgb(238, 238, 238);
+	margin: 5%;
+}
+
+h1, h2, h3, h4, h5, h6, .blockquote {
+	font-family: "Georga", sans-serif;
+}
+
+header {
+	border-bottom: 0.2rem solid black;
+	margin: 0 0 0.5rem;
+}
+
+
+header h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	line-height: 1.25;
+}
+
+img {
+	display: float;
+	background-color: rgb(255,255,255);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+	border: 0.25rem solid black;
+	padding: 1rem;
+}
+
+img.left {
+	margin-right: 1rem;
+	float: left;
+}
+
+img.right {
+	margin-left: 1rem;
+	float: right;
+}
+
+blockquote {
+	padding: 0 0 1rem 1rem;
+	float: right;
+	max-width: 40%;
+	font-family: "Georgia", sans-serif;
+	font-style: italic;
+	border-left: 0.25rem solid lightgray;
+}
+
+blockquote .author {
+	text-align: right;
+}
+
+main:after {
+	display: block;
+	content = "";
+	clear: both;
+}

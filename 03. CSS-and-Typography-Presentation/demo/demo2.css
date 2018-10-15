@@ -1,0 +1,15 @@
+html {
+	font: normal 14px/1.5 "Lucida Grande", sans-serif
+}
+
+body {
+	background: #FFC;
+	color: #333;
+	font-size 2em;
+	line-height: 1.4;
+	padding: 10%;
+}
+
+h1, h2, h3, h4 {
+	font-family: serif
+}

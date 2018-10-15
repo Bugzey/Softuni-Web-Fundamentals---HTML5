@@ -1,0 +1,13 @@
+html {
+	font: 16px/1.5 Helvetica, sans-serif;
+}
+
+body {
+	padding: 5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: 1em/1.2 Georgia, serif;
+	margin: 1rem 0 0 0;
+	padding: 0;
+}

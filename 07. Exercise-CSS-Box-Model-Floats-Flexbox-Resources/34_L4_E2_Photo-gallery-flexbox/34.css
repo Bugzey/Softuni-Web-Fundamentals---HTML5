@@ -1,0 +1,61 @@
+/*
+
+# 06. Photo Gallery - Flexbox
+
+## Tasks
+* Create an **"index.html"** file with title - **"Photo Gallery - Flexbox"**
+
+## Constraints
+* Add section with class **gallery** *(section.gallery)*
+	* Change the **display** property to **flex**
+	* Add **unordered list** with **list items** and **images** inside
+
+*/
+
+body {
+	font-family: "Helvetica", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 5%;
+	background-color: #EBEBEB;
+}
+
+.gallery {
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+.gallery li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	min-width: 30%;
+	flex: 0 0 auto;
+	background-color: #fff;
+	border: 0.5rem solid black;
+	margin: 0.5rem 0.5rem;
+	box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5), 0rem 0rem 1rem rgba(0, 0, 0, 0.5) inset;
+}
+
+.gallery .inner-box {
+	padding: 0;
+	margin: 0;
+}
+
+.gallery img {
+	margin: 2rem;
+	box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
+}

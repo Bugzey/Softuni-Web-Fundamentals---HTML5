@@ -1,0 +1,52 @@
+/*
+# 05 - Icon Font List
+
+### Tasks
+ * Create an HTML page which holds lists with items and icons
+ * Create 3 unordered lists
+ * Create 3 list items in each unordered list
+ * Fill the list items with the given text
+ * Style the page
+
+### Constraints
+ * The **Document** should be named "**index.html**"
+ * The **title** of the Document should be "**Icon Fonts - Lists**"
+ * The **unordered lists** should have class - "**icons**"
+ * Each of the **unordered lists** should have exactly 3 **list items** (_li_)
+ * Each of the **list items** should have exactly one **icon element** (_i_)
+ * The **page** should be styled, exactly like the provided screenshot
+ * Use _fontawesome_ for this task. Import it in your css, with the **@import** rule
+*/
+html {
+	font-family: "Helvetica", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 10%;
+}
+
+article {
+	background-color: rgb(51, 102, 153);
+	border-radius: 1rem;
+	color: rgb(238, 238, 238);
+	padding: 5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Georgia", serif;
+}
+
+ul {
+	list-style: square;
+}
+
+ul ul {
+	list-style: disc;
+}
+
+ul ul ul {
+	list-style: circle;
+}
+
+ol {
+	list-style: decimal;
+}

@@ -1,0 +1,79 @@
+/*
+
+# 01. Article with Quotes and Media
+
+## Tasks
+ * Create an **"index.html"** file with title - **"Article with Quotes and Media"**
+ * Use the images provided in the **resources** folder
+ * You  can take an old solutions of this task and **modify** them to match the requirements
+
+## Constraints
+* Divide your content into **header** and **main** tags
+ * The entire page **font** should have the following properties:
+	* Size - **16px** 
+	* Line height - **1.5**
+	* Font family - **"Helvetica", sans-serif**
+ * Add class **site-title** to the paragraph in the header *(p.site-title)*
+	* Change the display property to **inline-block**
+	* Set the font weight to **bold**
+	* Transform the text to **uppercase**
+*/
+
+body {
+	font-family: "Helvetica", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 5%;
+	background-color: #EEE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Georgia", serif;
+}
+
+p.site-title {
+	font-size: 3rem;
+	display: inline-block;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header {
+	border-bottom: 0.2rem solid black;
+}
+
+img {
+	background-color: #FFF;
+	padding: 1rem;
+	border: 0.2rem solid black;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.float-left {
+	float: left;
+	margin-right: 1rem;
+}
+
+.float-right {
+	float: right;
+	margin-left: 1rem;
+}
+
+blockquote {
+	font-family: "Georgia", serif;
+	float: right;
+	max-width: 40%;
+	font-style: italic;
+	border-left: 0.5rem solid lightgray;
+	padding-left: 1rem;
+}
+
+.blockquote-author {
+	text-align: right;
+}
+
+main:after {
+	display: block;
+	content: "";
+	clear: both;
+}

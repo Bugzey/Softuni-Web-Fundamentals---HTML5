@@ -1,0 +1,11 @@
+body {
+	background-color: #003;
+	color: #333;
+	font-size: 14px;
+	line-height: 1.25;
+}
+
+p {
+	width: 300px;
+	margin-left: 100px
+}

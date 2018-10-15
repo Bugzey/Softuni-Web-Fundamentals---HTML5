@@ -1,0 +1,47 @@
+/*
+
+# 01. Media Queries Playground
+
+## Tasks
+* Create an **"index.html"** file with title - **"Media Queries Playground"**
+* Create a **div** to contain text that will change based on **width queries**
+	* Add a width media query to change the contents of the after elements when a query matches
+* Create a **div** to contain text that will change based on **height queries**
+	* Add a height media query to change the contents of the after elements when a query matches
+* Create a **div** to contain text that will change based on aspect **ratio queries**
+	* Add an aspect ratio media query to change the contents of the after elements when a query matches
+
+*/
+
+body {
+	margin: 5%;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+#width,
+#height,
+#aspect {
+	visibility: hidden;
+	color: red;
+	font-weight: 700;
+}
+
+@media screen and (min-width: 600px) {
+	#width {
+		visibility: visible;
+	}
+}
+
+@media screen and (min-height: 600px) {
+	#height {
+		visibility: visible;
+	}
+}
+
+@media screen and (min-aspect-ratio: 8/5) {
+	#aspect {
+		visibility: visible;
+	}
+}

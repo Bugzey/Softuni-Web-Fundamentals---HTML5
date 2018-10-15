@@ -1,0 +1,100 @@
+/*
+# 02. Update Typography CSS
+
+## Tasks
+* Create an **"index.html"** file with title - **"Update Typography CSS"**
+* Update your **typography CSS** file with **Media Queries**
+* Move align classes to typography css
+* Move blockquote styling to typography css
+* Add media queries to control how aligned items and blockquotes are displayed for different devices
+
+## Constraints
+* Make the **font size** for phones 12px
+* Make the **font size** for screens larger than 500 14px
+* Make the **font size** for screens larger than 600 16px
+* Make the **font size** for screens larger than 800 18px
+* Make the **font size** for screens larger than 1300 21px
+* Make the **font size** for screens larger than 1800 23px
+
+*/
+@import "reset.css";
+@import "typography.css";
+
+body {
+	background-color: #EBEBEB;
+	color: black;
+}
+
+.site-title {
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+article {
+	display: flex;
+	max-width: 75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+main {
+	flex: 1 1 70%;
+}
+
+aside {
+	flex: 0 1 30%;
+}
+
+img {
+	background-color: white;
+	padding: 1rem;
+	border: 0.25rem solid black;
+	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+	margin-bottom: 1rem;
+}
+
+.float-left {
+	float: left;
+	margin-right: 1rem;
+}
+
+.float-right {
+	float: right;
+	margin-left: 1rem;
+}
+
+blockquote {
+	max-width: 40%;
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	body {
+		font-size: 21px;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	body {
+		font-size: 23px;
+	}
+}

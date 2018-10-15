@@ -1,0 +1,95 @@
+/*
+# 03. Blog Layout - Float
+
+---
+## Tasks
+ * Create an **"index.html"** and **"style.css"** files
+ * Change the **title** to **Blog Layout - Float**
+ * Create a **header** with **paragraph** inside for the site title
+ * Use **main** tag with **article** inside
+ 
+ ## Constraints
+ * Use **rgb(238, 238, 238)** for body background
+ * Use **rgb(255, 255, 255)** for image background and **rgba(0, 0, 0, 0.25)** for image box shadow
+ * Use font family **"Georgia", sans-serif** for the **blockquote**
+ * Use font family **"Georgia", sans-serif** with size **1em/1.2** for the headings
+*/
+
+body {
+	background-color: rgb(238, 238, 238);
+	margin: 5%;
+	font-family: "Helvetica", sans-serif;
+	line-height: 1.25;
+}
+
+h1, h2, h3, h4, h5, h6, .blockquote {
+	font-family: "Georgia", sans-serif;
+}
+
+header {
+	border-bottom: 0.2rem solid black;
+	margin: 0 0 0.5rem;
+}
+
+header h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	line-height: 1.25;
+}
+
+main {
+	float: left;
+	max-width: 70%;
+}
+
+nav {
+	float: left;
+	max-width: 30%;
+	padding-left: 2rem;
+}
+
+nav ul {
+	list-style: square;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: rgb(93, 134, 58);
+}
+
+img {
+	display: float;
+	background-color: rgb(255,255,255);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+	border: 0.25rem solid black;
+	padding: 1rem;
+}
+
+img.left {
+	margin-right: 1rem;
+	float: left;
+}
+
+img.right {
+	margin-left: 1rem;
+	float: right;
+}
+
+blockquote {
+	padding: 0 0 1rem 1rem;
+	float: right;
+	max-width: 40%;
+	font-family: "Georgia", sans-serif;
+	font-style: italic;
+	border-left: 0.25rem solid lightgray;
+}
+
+blockquote .author {
+	text-align: right;
+}
+
+main:after {
+	display: block;
+	content = "";
+	clear: both;
+}

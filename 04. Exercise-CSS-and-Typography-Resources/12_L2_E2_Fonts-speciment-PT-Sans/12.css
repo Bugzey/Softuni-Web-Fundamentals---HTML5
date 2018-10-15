@@ -1,0 +1,27 @@
+/*
+	* Use **PT Sans font-family**
+	* Make the **font-size** 16px
+	* Change the **line-height** to 1.5
+*/
+html {
+	font-family: "PT Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 10%;
+}
+
+ul {
+	list-style: square;
+}
+
+ul ul {
+	list-style: disc;
+}
+
+ul ul ul {
+	list-style: circle;
+}
+
+ol {
+	list-style: decimal;
+}

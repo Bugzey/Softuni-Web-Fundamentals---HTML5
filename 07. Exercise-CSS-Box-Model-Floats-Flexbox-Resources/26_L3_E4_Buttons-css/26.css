@@ -1,0 +1,54 @@
+/*
+
+# 04. Buttons CSS
+
+## Tasks
+* Create an **"index.html"** file with title - **"Buttons CSS"**
+* Take a look at **hover effects** in the screenshots
+* Take the colors with **color picker** from the screenshots
+
+## Constraints
+* Change the **cursor** property to [pointer](https://www.w3schools.com/cssref/pr_class_cursor.asp)
+* Change the **outline** property to [none](https://www.w3schools.com/Css/css_outline.asp)
+
+*/
+
+body {
+	background-color: #EEE;
+	margin: 5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.5;
+}
+
+button {
+	margin-right: 2rem;
+	border: 0.25rem solid #343232;
+	border-radius: 1.5rem;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+
+.normal {
+	color: #343232;
+}
+
+.normal:hover {
+	color: #006603;
+	border: 0.25rem solid #006603;
+	background-color: #FFF;
+}
+
+.filled,
+.icon {
+	color: #F2FFF8;
+	background-color: #343232;
+}
+
+.filled:hover,
+.icon:hover {
+	background-color: #006603;
+	border: 0.25rem solid #006603;
+}
