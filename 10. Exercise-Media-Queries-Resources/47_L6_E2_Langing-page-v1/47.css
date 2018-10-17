@@ -1,0 +1,344 @@
+/*
+
+# 02. Purple Spiders
+
+## Tasks
+* Create an **"index.html"** file with title - **"Purple Spiders Agency"**
+* Get the latest reset css
+* Get the latest typography css
+* Get the latest buttons css
+* Get the latest forms css
+* Create a section with a title "Need a website"
+* Create a section with a title "Our Team"
+* Create a section with a title "Sign-up to our Newsletter"
+* Create a section with a title "Testimonials"
+* Create footer
+* Make the page responsive per the screenshots attached
+
+*/
+
+body {
+	font-family: "Helvetica", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #111;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Georgia", serif;
+	margin-top: 0;
+	margin-bottom: 0.2em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	border-top: 0.2rem transparent purple;
+	border-bottom: 0.2rem transparent purple;
+	border-radius: 0.2rem;
+}
+
+a:focus,
+a:hover {
+	color: purple;
+	border-top: 0.2rem solid purple;
+	border-bottom: 0.2rem solid purple;
+}
+
+.site-wrapper {
+}
+
+section.newsletter,
+section.testimonials,
+footer {
+	box-shadow: 0 -0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+	padding: 1%;
+	max-width: 75rem;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+p.site-title {
+	margin: 0;
+	font-family: "Georgia", serif;
+	font-size: 2.5rem;
+	color: purple;
+}
+
+p.site-subtitle {
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: -0.05rem;
+}
+
+label,
+#menu {
+	display: none;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	list-style: none;
+	list-style-position: outside;
+	text-decoration: none;
+	margin-left: 1rem;
+	margin-right: 0;
+	padding: 0;
+}
+
+/*	Call to action	*/
+.call-to-action .wrapper {
+	width: 75%;
+	flex-direction: column;
+	max-height: 20rem;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.call-to-action h2,
+.call-to-action p,
+.call-to-action a {
+	flex: 0 1 75%;
+	max-width: 60%;
+}
+
+a.contact-us {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding: 0.4rem 2rem;
+	border: 0.15rem solid black;
+}
+
+a.contact-us:hover,
+a.contact-us:focus {
+	color: purple;
+	border: 0.15rem solid purple;
+}
+
+.call-to-action img {
+	flex: 0 0 100%;
+	width: 10rem;
+	height: auto;
+}
+
+/*	Newsletter	*/
+.newsletter {
+	width: 100%;
+	background: purple;
+}
+
+.newsletter h2 {
+	color: white;
+}
+
+.newsletter .wrapper {
+	justify-content: center;
+}
+
+.newsletter input {
+	margin-left: 1rem;
+	margin-bottom: 2rem;
+	background: white;
+	border-radius: 0.2rem;
+	border: 0.1rem solid black;
+	padding: 0.5rem 1rem;
+}
+
+.newsletter .email {
+	flex: 0 1 25%;
+}
+
+.newsletter .email:focus {
+	border-color: green;
+}
+
+/*	Team and testimonials	*/
+.team h2,
+.newsletter h2,
+.testimonials h2 {
+	text-align: center;
+	padding: 1em;
+	margin-bottom: 0;
+}
+
+.heading-bottom-border {
+	min-height: 0.2rem;
+	background: black;
+	max-width: 8%;
+	margin: auto;
+	margin-bottom: 1.5em;
+}
+
+.team-box,
+.testimonial-box {
+	flex: 0 0 30%;
+	position: relative;
+	padding: 1rem;
+}
+
+.team-box img,
+.testimonial-box img {
+	display: block;
+	margin: auto;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	overflow: hidden;
+	object-fit: cover;
+	box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.team-box img:after,
+.testimonial-box img:after {
+	border: 1rem solid black;
+}
+
+.team-box p,
+.testimonial-box p {
+	text-align: center;
+}
+
+p.message {
+	font-style: italic;
+}
+
+p.name {
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+p.position {
+	margin-top: 0;
+}
+
+/*	Footer	*/
+footer .wrapper {
+	align-items: flex-start;
+}
+
+footer h2 {
+	margin-bottom: 1rem;
+}
+
+.sitemap {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+footer .footer-boast,
+footer .sitemap,
+footer .contacts {
+	flex: 0 0 30%;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer .sitemap ul {
+	flex-direction: row;
+	align-items: flex-start;
+	justify-items: flex-start;
+}
+
+footer .contacts ul {
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+footer li {
+	flex: 0 1 45%;
+	list-style: none;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+}
+
+footer a {
+	padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		font-size: 16px;
+	}
+	nav {
+		display: none;
+		flex: 1 0 100%;
+	}
+
+	label {
+		display: block;
+	}
+
+	#menu:checked ~ nav {
+		display: block;
+	}
+
+	nav li {
+		margin: 0;
+		padding: 0 2rem;
+		width: 100%;
+	}
+
+	nav li a {
+		display: block;
+		border: 0.2rem solid transparent;
+		border-radius: 0.2rem;
+	}
+
+	.team-box,
+	.testimonial-box {
+		flex: 0 1 50%;
+		position: relative;
+		padding: 1rem;
+	}
+
+	footer .footer-boast,
+	footer .sitemap,
+	footer .contacts {
+		flex: 0 0 100%;
+	}
+
+	footer h3 {
+		padding-top: 1em;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 1900px) {
+	body {
+		font-size: 23px;
+	}
+}
