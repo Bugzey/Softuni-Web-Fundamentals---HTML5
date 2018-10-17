@@ -20,26 +20,97 @@ body {
 	color: black;
 }
 
+.site-wrapper {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 75rem;
+}
+
+header,
+footer {
+	flex: 0 0 100%;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .site-title {
 	font-size: 3rem;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-article {
+nav ul {
 	display: flex;
-	max-width: 75rem;
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-end;
+	background: white;
+	margin: 0;
+}
+
+nav li {
+	display: block;
+	list-style: none;
+	list-style-position: outside;
+	margin: 1rem 1rem;
+	position: relative;
+}
+
+nav li:last-of-type {
+	margin-right: 1rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	background: #2C2C2C;
+	border-radius: 0.25rem;
+	padding: 0.5rem 1rem;
+	min-width: 100%;
+}
+
+nav li:hover > a,
+nav a:hover {
+	background: green;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	left: -1rem;
+	top: 2rem;
+	width: 15rem;
+}
+
+nav ul ul li {
+	flex: 1 0 100%;
+}
+
+nav ul > li:hover > ul {
+	display: block;
 }
 
 main {
-	flex: 1 1 70%;
+	flex: 1 0 65%;
 }
 
 aside {
-	flex: 0 1 30%;
+	flex: 0 0 25%;
+	margin-left: 1rem;
+}
+
+
+aside a {
+	color: green;
+	text-decoration: none;
 }
 
 img {
@@ -64,32 +135,12 @@ blockquote {
 	max-width: 40%;
 }
 
-@media screen and (max-width: 500px) {
-	body {
-		font-size: 12px;
+@media screen and (max-width: 800px) {
+	.site-title {
+		width: 100%;
 	}
-}
 
-@media screen and (min-width: 600px) {
-	body {
-		font-size: 14px;
-	}
-}
-
-@media screen and (min-width: 800px) {
-	body {
-		font-size: 16px;
-	}
-}
-
-@media screen and (min-width: 1300px) {
-	body {
-		font-size: 21px;
-	}
-}
-
-@media screen and (min-width: 1800px) {
-	body {
-		font-size: 23px;
+	nav li {
+		justify-content: stretch;
 	}
 }
