@@ -1,0 +1,52 @@
+@media screen and (max-width: 480px) {
+	body {
+		background-image: url(images/bg.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: top;
+	}
+
+	header > .logo {
+		margin-bottom: 2rem;
+	}
+
+	header > .logo a {
+		font-size: 4rem;
+	}
+
+	.wrapper header.special {
+		padding: 2rem;
+	}
+
+	.wrapper.style1 .content {
+		padding: 0 2rem;
+	}
+
+	.wrapper.style2 {
+		padding: 2rem;
+	}
+
+	.gallery {
+		display: flex;
+	}
+
+	.gallery > * {
+		flex: 1 0 100%;
+		width: 100%;
+	}
+
+	.spotlight {
+		flex-direction: column;
+		justify-content: stretch;
+	}
+
+	.spotlight > * {
+		flex: 1 0 100%;
+		width: 100%;
+	}
+
+	.spotlight .inner {
+		padding: 1rem;
+		text-align: center;
+	}
+}
