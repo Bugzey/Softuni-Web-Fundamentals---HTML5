@@ -1,0 +1,47 @@
+/*
+# 03. Social Media Icons
+
+## Tasks
+* Create an **"index.html"** file with title - **"Social Media Icons"**
+* Get the latest *reset.css*
+* Get the latest *typography.css*
+* Include **Font Awesome**
+* Add social **icons**
+
+*/
+
+body {
+	font-family: "Helvetica", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.container {
+	margin: auto;
+	max-width: 40rem;
+	margin-top: 50vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+span {
+	width: 6rem;
+	height: 6rem;
+	background-image: linear-gradient(to bottom, lightgray, white);
+	box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+}
+
+img {
+	height: 2rem;
+	width: auto;
+	padding: 2rem;
+}
+
+img:after {
+	width: 110%;
+	height: 110%;
+	background: red;
+}
