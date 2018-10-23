@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: gray;
+	background-image: linear-gradient(to right, #A0685B, #F2DFBE);
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.login-container {
+	background: white;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+	max-width: 65rem;
+	margin: 2rem auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	align-items: stretch;
+	text-align: center;
+}
+
+.login-container > img {
+	flex: 0 0 45%;
+}
+
+.login-container > form {
+	flex: 0 0 30%;
+}
+
+.login {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: space-between;
+}
+
+.login > * {
+	flex: 1 0 100%;
+}
+
+.login fieldset {
+	padding: 0;
+	border-width: 0;
+	position: relative;
+}
+
+.login h1 {
+	color: black;
+}
+
+.login legend {
+	color: black;
+}
+
+.login ul {
+	text-align: left;
+	padding-left: 1rem;
+	margin: 0.5rem 0;
+}
+
+.login li {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+
+.login input.radio {
+	margin: 0 1rem 0 0;
+	color: white;
+	background: white;
+	border-width: 1rem;
+	border-color: gray;
+	border-radius: 50%;
+	height: 100%;
+}
+
+.login label.radio {
+}
+
+.login input.field,
+.login input.button {
+	border-radius: 2rem;
+	padding: 0.75rem;
+	border-width: 0;
+	width: 100%;
+}
+
+.login input.field {
+	background: lightgray;
+	padding-left: 4rem;
+	border-width: 0;
+}
+
+.login .fas {
+	color: gray;
+	position: absolute;
+	top: 0.9rem;
+	left: 2rem;
+}
+
+.login input.button {
+	color: white;
+	background: #8F6B53;
+	font-weight: bold;
+}
+
+.login input.button:hover {
+	background: #5E4736;
+}
+
+.login a {
+	color: black;
+}
+
+.login a:last-child {
+}
