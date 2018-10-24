@@ -1,0 +1,184 @@
+/*	External resources	*/
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+
+/*	Page-wide	*/
+body {
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background: white;
+	color: black;
+	text-align: center;
+}
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+main,
+section {
+	padding: 3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 1em 0;
+	color: white;
+}
+
+p {
+	max-width: 50rem;
+	text-align: center;
+	margin: 2rem auto;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+}
+
+.site-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: stretch;
+	align-items: stretch;
+	justify-content: center;
+	margin: 2rem auto;
+	padding: 0;
+}
+
+.site-wrapper > * {
+	flex: 0 1 auto;
+}
+
+.under-heading {
+	display: inline-block;
+	width: 4rem;
+	height: 0.1rem;
+	background: red;
+}
+
+/*	Navigation	*/
+nav ul {
+	list-style: none;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+
+nav li {
+	display: inline-block;
+	padding: 1rem 0;
+}
+
+nav a {
+	color: red;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 1rem;
+}
+
+nav a:hover,
+nav a:active {
+	color: white;
+	background: red;
+}
+
+/*	Header	*/
+header {
+	color: white;
+}
+
+.site-intro {
+	padding: 6rem 3rem;
+	background-image: url('img/header.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+}
+
+.intro-footer {
+	background: red;
+}
+
+.intro-footer .under-heading {
+	background: white;
+}
+
+.intro-footer .register {
+	color: red;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #F8F9FB;
+	padding: 1rem 2rem;
+	border-width: 0;
+	border-radius: 2rem;
+}
+
+.intro-footer .register:hover,
+.intro-footer .register:focus {
+	background: #BBB;
+}
+
+/*	Main part	*/
+main h2,
+main h3 {
+	color: red;
+	font-weight: normal;
+}
+
+main .under-heading {
+	color: red;
+}
+
+.monkey-type-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+.monkey-type {
+	flex: 0 1 20%;
+}
+
+.far,
+.fas {
+	font-size: 4rem;
+	color: red;
+	margin: 1rem;
+}
+
+/*	Gallery	*/
+.gallery {
+	display: inline-block;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-top: 0.2rem solid red;
+	border-bottom: 0.2rem solid red;
+}
+
+.gallery .image-container {
+	flex: 1 1 30%;
+}
+
+.gallery img {
+	border-top: 0;
+	border-bottom: 0;
+	border-left: 0.2rem solid red;
+	border-right: 0.2rem solid red;
+	max-height: 15rem;
+	max-width: auto;
+}
+
+/*	Footer	*/
+footer * {
+	margin: 0 auto;
+	padding: 0;
+}
