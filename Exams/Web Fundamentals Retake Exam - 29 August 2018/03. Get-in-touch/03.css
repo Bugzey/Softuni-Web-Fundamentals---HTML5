@@ -1,0 +1,100 @@
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+
+html {
+	background-image: url('images/bg-01.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: rgba(133, 104, 220, 0.7);
+	background-blend-mode: soft-light;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	box-sizing: border-box;
+	position: relative;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+form {
+	background: white;
+	max-width: 65rem;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 5rem;
+	justify-content: space-around;
+	align-items: center;
+	margin: 5rem auto;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+.img-container {
+	flex: 0 0 45%;
+}
+
+form img {
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	width: auto;
+}
+
+form .input {
+	flex: 0 0 45%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	justify-items: space-around;
+}
+
+input[type="text"],
+textarea {
+	background: #E6E6E6;
+	color: #AAAAAA;
+	font-weight: bold;
+	border-radius: 1.5rem;
+	padding: 0.75rem 0 0.75rem 3rem;
+	margin: 0.5rem 0;
+	border: none;
+	width: 100%;
+}
+
+.fas,
+.far {
+	color: #AAA;
+	position: absolute;
+	top: 1.5rem;
+	left: 1.5rem;
+}
+
+input[type="text"]:focus + .fas,
+input[type="text"]:focus + .far {
+	color: #8568DC;
+	left: 1rem;
+}
+
+textarea {
+	height: 6rem;
+}
+
+input[type="submit"] {
+	color: white;
+	background: #8568DC;
+	border-radius: 1.5rem;
+	border: none;
+	padding: 0.75rem;
+	font-weight: bold;
+	margin: 1.5rem 0;
+}
