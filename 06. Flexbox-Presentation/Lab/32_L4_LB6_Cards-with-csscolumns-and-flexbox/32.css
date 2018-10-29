@@ -1,0 +1,90 @@
+/*
+# 06. Cards with CSS Columns and Flexbox
+
+## Tasks
+ * Create an **"index.html"** with title - **"Cards with CSS Columns and Flexbox"**
+ * Use the images from the **resources** folder
+ 
+## Constraints
+ * Body **background color** must be **rgb(238, 238, 238)**
+ * The **content** should be divided in two parts:
+	* First part is container unit **(div)** with classes **cards-layout** and **masonry**
+	* Second part is is container unit **(div)** with classes **cards-layout** and **flex**
+*/
+
+body {
+	background: rgb(238, 238, 238);
+	font-family: "Helvetica", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	max-width: 65rem;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.card {
+	background: white;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+	margin: 1rem;
+	break-inside: avoid;
+	overflow: hidden;
+}
+
+.card p {
+	margin: 0;
+	padding: 1rem;
+}
+
+.card p:first-child {
+	padding: 1rem 1rem 0 1rem;
+}
+
+.card p:last-child {
+	border-top: 0.1rem solid gray;
+}
+
+/*	Masonry layout	*/
+.masonry {
+	column-count: 3;
+	column-width: 30%;
+	column-gap: 0;
+}
+
+.masonry img {
+	width: 100%;
+	height: auto;
+}
+
+.masonry .card:first-of-type {
+	margin-top: 0;
+}
+
+/*	Flexbox layout	*/
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: top;
+}
+
+.flex .card {
+	flex: 0 0 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.flex .card p:nth-last-child(2) {
+	flex: 1 0 auto;
+}
+
+.flex img {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
