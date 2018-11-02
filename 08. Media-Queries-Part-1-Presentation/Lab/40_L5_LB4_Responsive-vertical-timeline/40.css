@@ -1,0 +1,101 @@
+/*
+# 04. Responsive Vertical Timeline
+
+## Tasks
+* Create an **"index.html"** file with title - **"Responsive Vertical Timeline"**
+* Add a list of articles in a section 
+* Add **media queries** for the list to look good on **mobile** and **desktop**
+
+## Constraints
+* Use **semantic HTML** - section, article, header etc.
+*/
+body {
+	font-family: "Helvetica", sans-serif;
+	font-family: 16px;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+section.article-container {
+	max-width: 65rem;
+	border: 0.5rem solid #8E8E8E;
+	background: white;
+	margin: 0 auto;
+	position: relative;
+}
+
+section.article-container::after {
+	content: '';
+	position: absolute;
+	width: 1rem;
+	background: #8E8E8E;
+	top: 0;
+	bottom: 0;
+	left: calc(50% - 0.5rem);
+}
+
+.article-container article {
+	position: relative;
+	width: 50%;
+	padding: 1rem 2rem;
+}
+
+.article-container article:nth-child(even) {
+	text-align: right;
+	left: 0;
+}
+
+.article-container article:nth-child(odd) {
+	text-align: left;
+	left: 50%;
+}
+
+.article-container article::before {
+	z-index: 1;
+	left: -1rem;
+	top: 2.1rem;
+	width: 2rem;
+	height: 2rem;
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	background-color: white;
+	border: 0.5rem solid #8E8E8E;
+}
+
+article:nth-child(even)::before {
+	left: calc(100% - 1rem);
+}
+
+@media screen and (max-width: 600px) {
+	.article-container article {
+		padding-left: 4rem;
+		width: 100%;
+	}
+
+	.article-container article:nth-child(even) {
+		text-align: left;
+		left: 0;
+	}
+
+	.article-container article:nth-child(odd) {
+		text-align: left;
+		left: 0;
+	}
+
+	section.article-container::after {
+		left: 1.5rem;
+	}
+
+	.article-container article::before {
+		left: 1rem;
+	}
+
+	article:nth-child(even)::before {
+		left: 1rem;
+	}
+}
