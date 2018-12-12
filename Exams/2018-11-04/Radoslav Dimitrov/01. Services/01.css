@@ -1,0 +1,103 @@
+/*
+
+# 01. Services
+
+## Tasks
+* Create a Web page **(HTML5 + CSS3)** that looks and behaves like the provided screenshots
+* You have been given all of the **required resources**
+
+## Constraints
+* Use the Google font - [**"Open Sans"**](https://fonts.google.com/specimen/Open+Sans)
+* The web page should open correctly in the latest version of Chrome
+* Pixel-perfect implementation is **NOT** required
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+main {
+	max-width: 70rem;
+	margin: auto;
+	color: #111;
+}
+
+main h1:after {
+	display: block;
+	content: '';
+	height: 0.2rem;
+	background: #1895A8;
+	width: 6rem;
+}
+
+.plan-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+
+.plan {
+	flex: 0 0 32%;
+	text-align: center;
+	border: 0.05rem solid lightgray;
+}
+
+.plan h2 {
+	padding: 1rem 0;
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: normal;
+	color: white;
+}
+
+.basic h2,
+.business h2 {
+	background: black;
+}
+
+.professional h2 {
+	background: #1895A8;
+}
+
+.plan p {
+	padding: 1rem 0;
+	margin: 0;
+	border-bottom: inherit;
+	font-size: 0.75rem;
+}
+
+.plan .price {
+	font-size: 2rem;
+	background: #F5F5F5;
+}
+
+.plan .description {
+	font-size: 0.75rem;
+}
+
+.plan p:last-child {
+	margin: 1rem 0;
+	border-bottom: none;
+}
+
+.plan a {
+	text-decoration: none;
+	padding: 1rem 2rem;
+	color: white;
+	font-size: 1rem;
+	background: #008BB9;
+	border-radius: 0.3rem;
+}

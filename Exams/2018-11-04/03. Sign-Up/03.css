@@ -1,0 +1,173 @@
+/*
+# 03. Sign Up
+
+## Tasks
+* Create a web page **(HTML5 + CSS3)** that looks and behaves like the provided screenshot
+* You are given all of the **required resources**
+* The output should be valid **HTML + CSS + images** that implement the above web page
+
+## Constraints
+* Use the Google font - **"Open Sans"**
+* Use **Font Awesome** for the icons
+* The site should open correctly in the latest version of Chrome
+* Pixel-perfect implementation is **NOT** required
+* You are **NOT** permitted to use libraries like Bootstrap
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	background: #E8E8E8;
+	line-height: 1.5;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+*, *:before; *:after {
+	box-sizing: inherit;
+	margin: inherit;
+	padding: inherit;
+}
+
+main {
+	max-width: 45rem;
+	min-height: 25rem;
+	margin: auto;
+	border-radius: 0.1rem;
+	box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: center;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+main article {
+	flex: 0 0 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+}
+
+main article * {
+	flex: 1 0 auto;
+}
+
+/*	Greeting - left half	*/
+.greet {
+	background-image: url('images/cover.jpg'), linear-gradient(to bottom, black, gray);
+	background-blend-mode: multiply;
+	background-origin: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.greet section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.greet section * {
+	flex: 0 1 auto;
+}
+
+.greet .org-name {
+	justify-content: flex-start;
+}
+
+.greet .text {
+	color: #EEE;
+	align-content: flex-start;
+}
+
+.org-name {
+	justify-content: flex-start;
+	font-size: 0.8rem;
+	font-weight: bold;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+
+.welcome-title {
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+.welcome-subtitle {
+	font-size: 1.1rem;
+	margin: 0;
+	padding: 0;
+}
+
+.greet .social,
+.greet .welcome-title {
+	flex-grow: 0;
+}
+
+.greet .social {
+	margin-bottom: 1.5rem;
+}
+
+.social i {
+	width: 0.8rem;
+	height: auto;
+	padding: 0 0.5rem;
+}
+
+
+/*	Input form - right half	*/
+form {
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-items: space-between;
+	padding: 2rem;
+	color: gray;
+}
+
+label {
+	margin: 0.5rem 0 0 0;
+	color: lightgray;
+}
+
+form input {
+	color: gray;
+	border: none;
+	border-bottom: 0.1rem solid gray;
+	margin: 0.5rem 0;
+	padding-left: 1rem;
+}
+
+form .form-submit {
+	margin-top: 1rem;
+}
+
+form input[type="submit"] {
+	padding: 0.75rem 2rem;
+	color: white;
+	background: black;
+	border-radius: 2rem;
+	font-weight: bold;
+}
+
+form a {
+	color: gray;
+}

@@ -1,0 +1,335 @@
+/*
+# 04. InTime Agency
+
+## Tasks
+* Create a web page **(HTML5 + CSS3)** that looks and behaves like the provided screenshot
+* You are given all of the **required resources**
+* The output should be valid **HTML + CSS + images** that implement the above web page
+
+## Constraints
+* Use the font - **"Helvetica"**
+* Use **Font Awesome** for the icons
+* The site should open correctly in the latest version of Chrome
+* Pixel-perfect implementation is **NOT** required
+* You are **NOT** permitted to use libraries like Bootstrap
+*/
+
+/*	Resources	*/
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+
+/*	General	- elements	*/
+body {
+	font-family: "Helvetica", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background: #FFF;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+h1 {font-size: 2.5rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.5rem;}
+
+h2:after {
+	display: block;
+	margin: auto;
+	content: '';
+	min-height: 0.2rem;
+	width: 8rem;
+	background: #008BB9;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: normal;
+	margin: 1em 0;
+}
+
+p {
+	margin: 1rem 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/*	Layout and Backgrounds	*/
+.content {
+	max-width: 70rem;
+	margin: auto;
+	text-align: center;
+	padding: 2rem;
+}
+
+header,
+.welcome,
+.service {
+	background: #FFF;
+}
+
+.call-to-action {
+	background-image: url('images/slide2.jpg');
+	background-position: center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.services-gallery {
+	background: #EDEFF0;
+}
+
+.newsletter {
+	background: #383E42;
+	color: white;
+}
+
+.footer-links {
+	background: #2E3438;
+	color: white;
+}
+
+footer {
+	background: #252A2E;
+	color: white;
+}
+
+.button {
+	margin: 1rem 0;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	color: white;
+	background: #008BB9;
+	border: none;
+}
+
+span.site-title:before {
+	content: 'In';
+	color: #111;
+	font-size: 1.5rem;
+}
+
+span.site-title:after {
+	content: 'Time';
+	color: #008BB9;
+	font-size: 1.5rem;
+}
+
+
+/*	Header	*/
+header .content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header ul {
+	display: flex;
+}
+
+header li {
+	margin: 0.5rem 1rem;
+}
+
+header a {
+	border-bottom: 0.1rem transparent;
+}
+
+nav .nav-current {
+	border-bottom: 0.2rem solid #6ABEFE;
+}
+
+/*	Call to action	*/
+.call-to-action .content {
+	padding: 10rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.call-to-action .content div {
+	padding: 1rem;
+	padding-bottom: 2rem;
+	text-align: left;
+	flex: 0 1 auto;
+	color: white;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.call-to-action p {
+	margin: 0 0 1rem 0;
+	font-size: 2.5rem;
+}
+
+.call-to-action .button {
+	font-size: 1.5rem;
+}
+
+/*	Welcome	*/
+.welcome p:last-of-type {
+	margin-bottom: 2rem;
+}
+
+.welcome .button {
+	font-weight: bold;
+	background: #444444;
+}
+
+/*	Services gallery	*/
+.services-gallery .content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.services-gallery h2 {
+	flex: 1 0 100%;
+}
+
+.services-gallery .service {
+	flex: 0 1 32%;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	padding-bottom: 2rem;
+}
+
+.service img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.service p {
+	margin: 1rem;
+}
+
+.service p:last-of-type {
+	margin-bottom: 2rem;
+}
+
+.service .button {
+	border-radius: inherit;
+	background: #444444;
+}
+
+/*	Newsletter	*/
+.newsletter h2:after {
+	background: #FFF;
+}
+
+.newsletter p {
+	margin: 1rem 0;
+}
+
+.newsletter .wide-inputs {
+	max-width: 75%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.newsletter input[type="email"] {
+	flex: 3 0 auto;
+	border: none;
+	height: 4rem;
+	border-radius: 0.5rem;
+	color: lightgray;
+	padding: 1rem;
+	background: #53595D;
+	margin-right: 1rem;
+}
+
+.newsletter input::placeholder {
+	font-style: italic;
+}
+
+.newsletter .button {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5rem;
+	flex: 1 0 auto;
+	border-radius: 0.5rem;
+	background: #6ABEFE;
+}
+
+/*	Footer-links	*/
+.footer-links .content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.footer-links h3 {
+	margin: 0;
+}
+
+.footer-links li {
+	margin: 1rem 0;
+}
+
+.footer-links a {
+	padding: 0.5rem 0;
+}
+
+.footer-links p {
+	margin: 0.5rem 0;
+}
+
+.footer-links a[href^="mailto"] {
+	color: #DDF;
+}
+
+.footer-links .social-icons {
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.social-icons a {
+	padding: 0;
+}
+
+.social-icons .fab,
+.social-icons .fas {
+	font-size: 1.5rem;
+}
+
+
+/*	Footer	*/
+footer .content {
+	padding: 0.5rem 0;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer a {
+	color: lightblue;
+}
